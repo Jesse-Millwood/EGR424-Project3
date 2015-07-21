@@ -1,0 +1,15 @@
+# Files created by emacs
+*~
+~*
+.#*
+*#
+# Binaries
+*.bin
+*.elf
+*.axf
+# Other Files
+objdump*
+# App file
+app.c
+# Tags
+G*
