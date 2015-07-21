@@ -11,9 +11,9 @@ CC=$(GNUPATH)/arm-none-eabi-gcc -Wall -Os -march=armv7-m -mcpu=cortex-m3 -mthumb
 
 all: elf
 
-elf: lockdemo.c syscalls.c startup_gcc.c threads.c create.S rit128x96x4.c
+elf: project3.c syscalls.c startup_gcc.c threads.c create.S rit128x96x4.c
 	mkdir -p $(BINPATH)
-	${CC} -o $(BINPATH)/$(TARGETNAME).elf -I${STELLARISWARE} -L${STELLARISWARE}/driverlib/gcc-cm3 -Tlinkscript.x -Wl,-Map,lockdemo.map -Wl,--entry,ResetISR lockdemo.c startup_gcc.c syscalls.c rit128x96x4.c create.S threads.c -ldriver-cm3
+	${CC} -o $(BINPATH)/$(TARGETNAME).elf -I${STELLARISWARE} -L${STELLARISWARE}/driverlib/gcc-cm3 -Tlinkscript.x -Wl,-Map,lockdemo.map -Wl,--entry,ResetISR project3.c startup_gcc.c syscalls.c rit128x96x4.c create.S threads.c -ldriver-cm3
 
 flash: 
 	sudo openocd -f $(OCDBOARDSCRIPT) -c "$(PROGRAMSTRING)"
@@ -24,4 +24,4 @@ sim:
 clean:
 	rm -f *.elf *.map
 
-# vim: noexpandtab  
+
