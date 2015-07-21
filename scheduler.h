@@ -31,9 +31,10 @@ typedef struct LOCK_T
 }lock_t;
 
 typedef struct {
-  int active;       // non-zero means thread is allowed to run
-  char *stack;      // pointer to TOP of stack (highest memory location)
-  jmp_buf state;    // saved state for longjmp()
+    int active;       // non-zero means thread is allowed to run
+    char *stack;      // pointer to TOP of stack (highest memory location)
+    jmp_buf state;    // saved state for longjmp()
+    unsigned savedregs[40]; 
 } threadStruct_t;
 
 

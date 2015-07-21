@@ -57,6 +57,12 @@ void main(void)
 
   // Initialize the global thread lock
   // lock_init(&threadlock);
+  lock_init(&OLED_lock);
+  lock_init(&UART0_lock);
+  lock_init(&UART1_lock);
+  lock_init(&LED_lock);
+
+  iprintf("Num of threads: %d\n", NUM_THREADS);
 
   // Start running coroutines
   scheduler();
