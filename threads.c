@@ -1,39 +1,51 @@
 #include <stdio.h>
 #include "scheduler.h"
 
-void thread1(void)
-{
-  while (1) {
-    if (lock_acquire(&threadlock))
-    {
-        lock_acquire(&threadlock);
-        // Simulate code that is occasionally interrupted
-        iprintf("lock cnt: %i\n", threadlock.lock_count);
-        iprintf("THIS IS T");
-        yield(); // context switch "interrupt"
-        iprintf("HREAD NU");
-        yield(); // context switch "interrupt"
-        iprintf("MBER 1\r\n");
-        iprintf("lock cnt: %i\n", threadlock.lock_count);
-        lock_release(&threadlock);
-         lock_release(&threadlock);
-        iprintf("lock cnt: %i\n", threadlock.lock_count);
-    }
-    yield();
-  }
+void thread1_UART(void){
+	//loop
+	while(1)
+	{
+		if(lock_acquire(&UART0_lock))
+		{
+			//print
+		}
+		yield();
+	}
 }
 
-void thread2(void)
-{
-  while (1) {
-    if (lock_acquire(&threadlock)) {
-      // Simulate code that is occasionally interrupted
-      iprintf("this is t");
-          yield(); // context switch "interrupt"
-      iprintf("hread number 2\r\n");
+void thread2_LED(void){
+	//loop
+	while(1)
+	{
+		if(lock_acquire(&LED_lock))
+		{
+			//toggle LED every second
+		}
+	}
+	//(systick timer times out ever 1ms, so proves pre-emption works)
+}
 
-      lock_release(&threadlock);
-    }
-    yield();
-  }
+void thread3_OLED(void)
+{
+	//loop
+	while(1)
+	{
+		if(lock_acquire(&OLED_lock))
+		{
+			//display on OLED
+		}
+		yield();
+	}
+}
+
+//for implementing locks, EC
+void thread4_UART(void)
+{	
+	while(1)
+	{
+		if(lock_acquire(&UART1_lock))
+		{
+			//whatever
+		}
+	}
 }
