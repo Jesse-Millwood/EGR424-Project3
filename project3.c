@@ -13,23 +13,6 @@
 
 
 
-
-
-
-// These are functions you have to write. Right now they are do-nothing stubs.
-
-
-
-
-// These are the external user-space threads. In this program, we create
-// the threads statically by placing their function addresses in
-// threadTable[]. A more realistic kernel will allow dynamic creation
-// and termination of threads.
-
-
-
-
-
 void main(void)
 {
   unsigned i;

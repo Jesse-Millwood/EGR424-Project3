@@ -1,14 +1,21 @@
 #ifndef _SCHEDULER_H_
 #define _SCHEDULER_H_
 
+#include <setjmp.h>
 // thread_t is a pointer to function with no parameters and
 // no return value...i.e., a user-space thread.
 typedef void (*thread_t)(void);
 extern void thread1(void);
 extern void thread2(void);
+extern void  thread1_UART(void);
+extern void  thread2_LED(void);
+extern void  thread3_OLED(void);
+extern void  thread4_UART(void);
 static thread_t threadTable[] = {
-  thread1,
-  thread2
+  thread1_UART,
+  thread2_LED,
+  thread3_OLED,
+  thread4_UART
 };
 
 //-- Macros
