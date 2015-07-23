@@ -54,7 +54,7 @@ unsigned lock_acquire(lock_t* lock);
 void lock_release(lock_t* lock);
 void yield(void);
 void scheduler(void);
-void systick_handler(void);
+//void systick_handler(void);
 void systick_init(void);
 void periphs_init(void);
 void createThread(jmp_buf buf, char *stack);

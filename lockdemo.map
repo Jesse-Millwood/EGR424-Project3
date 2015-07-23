@@ -1,27 +1,27 @@
 Archive member included because of file (symbol)
 
 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
-                              /tmp/ccUGYb3w.o (GPIOPadConfigSet)
+                              /tmp/ccy6gKMc.o (GPIOPadConfigSet)
 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(interrupt.o)
-                              /tmp/ccIbWKpi.o (IntMasterEnable)
+                              /tmp/cc8rrok2.o (IntMasterEnable)
 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
-                              /tmp/ccUGYb3w.o (SSIConfigSetExpClk)
+                              /tmp/ccy6gKMc.o (SSIConfigSetExpClk)
 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
-                              /tmp/ccIbWKpi.o (SysCtlPeripheralEnable)
+                              /tmp/cc8rrok2.o (SysCtlPeripheralEnable)
 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
-                              /tmp/ccIbWKpi.o (UARTConfigSetExpClk)
+                              /tmp/cc8rrok2.o (UARTConfigSetExpClk)
 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(cpu.o)
                               /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(interrupt.o) (CPUcpsid)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-errno.o)
-                              /tmp/ccxU2sOp.o (__errno)
+                              /tmp/ccQ9p0T8.o (__errno)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-exit.o)
-                              /tmp/ccIbWKpi.o (exit)
+                              /tmp/cc8rrok2.o (exit)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
                               /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-errno.o) (_impure_ptr)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-iprintf.o)
-                              /tmp/ccIbWKpi.o (iprintf)
+                              /tmp/cc8rrok2.o (iprintf)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-malloc.o)
-                              /tmp/ccIbWKpi.o (free)
+                              /tmp/cc8rrok2.o (free)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o)
                               /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-malloc.o) (_malloc_r)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mlock.o)
@@ -29,7 +29,7 @@ Archive member included because of file (symbol)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-sbrkr.o)
                               /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o) (_sbrk_r)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-setjmp.o)
-                              /tmp/ccIbWKpi.o (setjmp)
+                              /tmp/cc8rrok2.o (setjmp)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-vfiprintf.o)
                               /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-iprintf.o) (_vfiprintf_r)
 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-wsetup.o)
@@ -100,13 +100,13 @@ Archive member included because of file (symbol)
 Allocating common symbols
 Common symbol       size              file
 
-UART0_lock          0xc               /tmp/ccIbWKpi.o
-LED_lock            0xc               /tmp/ccIbWKpi.o
+UART0_lock          0xc               /tmp/cc8rrok2.o
+LED_lock            0xc               /tmp/cc8rrok2.o
 errno               0x4               /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o)
-OLED_lock           0xc               /tmp/ccIbWKpi.o
-currThread          0x4               /tmp/ccIbWKpi.o
-UART1_lock          0xc               /tmp/ccIbWKpi.o
-heap_end            0x4               /tmp/ccxU2sOp.o
+OLED_lock           0xc               /tmp/cc8rrok2.o
+currThread          0x4               /tmp/cc8rrok2.o
+UART1_lock          0xc               /tmp/cc8rrok2.o
+heap_end            0x4               /tmp/ccQ9p0T8.o
 
 Discarded input sections
 
@@ -120,16 +120,16 @@ Discarded input sections
  .init_array    0x00000000        0x4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  .fini_array    0x00000000        0x4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  .jcr           0x00000000        0x0 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .data          0x00000000        0x0 /tmp/ccIbWKpi.o
- .data          0x00000000        0x0 /tmp/ccILwBdp.o
- .bss           0x00000000        0x0 /tmp/ccILwBdp.o
- .data          0x00000000        0x0 /tmp/ccxU2sOp.o
- .bss           0x00000000        0x0 /tmp/ccxU2sOp.o
- .data          0x00000000        0x0 /tmp/ccUGYb3w.o
- .data          0x00000000        0x0 /tmp/ccZx16PE.o
- .bss           0x00000000        0x0 /tmp/ccZx16PE.o
- .data          0x00000000        0x0 /tmp/ccWKRUnP.o
- .bss           0x00000000        0x0 /tmp/ccWKRUnP.o
+ .data          0x00000000        0x0 /tmp/cc8rrok2.o
+ .data          0x00000000        0x0 /tmp/ccNbms34.o
+ .bss           0x00000000        0x0 /tmp/ccNbms34.o
+ .data          0x00000000        0x0 /tmp/ccQ9p0T8.o
+ .bss           0x00000000        0x0 /tmp/ccQ9p0T8.o
+ .data          0x00000000        0x0 /tmp/ccy6gKMc.o
+ .data          0x00000000        0x0 /tmp/ccaOt0gh.o
+ .bss           0x00000000        0x0 /tmp/ccaOt0gh.o
+ .data          0x00000000        0x0 /tmp/ccmWucfo.o
+ .bss           0x00000000        0x0 /tmp/ccmWucfo.o
  .text          0x00000000        0x0 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
  .data          0x00000000        0x0 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
  .bss           0x00000000        0x0 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
@@ -604,12 +604,12 @@ Linker script and memory map
 
 LOAD /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
 LOAD /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-LOAD /tmp/ccIbWKpi.o
-LOAD /tmp/ccILwBdp.o
-LOAD /tmp/ccxU2sOp.o
-LOAD /tmp/ccUGYb3w.o
-LOAD /tmp/ccZx16PE.o
-LOAD /tmp/ccWKRUnP.o
+LOAD /tmp/cc8rrok2.o
+LOAD /tmp/ccNbms34.o
+LOAD /tmp/ccQ9p0T8.o
+LOAD /tmp/ccy6gKMc.o
+LOAD /tmp/ccaOt0gh.o
+LOAD /tmp/ccmWucfo.o
 LOAD /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a
 START GROUP
 LOAD /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a
@@ -618,289 +618,291 @@ END GROUP
 LOAD /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
 LOAD /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
 
-.text           0x00000000     0x475c
+.text           0x00000000     0x482c
                 0x00000000                _text = .
  *(.isr_vector)
- .isr_vector    0x00000000       0xf0 /tmp/ccILwBdp.o
+ .isr_vector    0x00000000       0xf0 /tmp/ccNbms34.o
                 0x00000000                g_pfnVectors
  *(.text*)
- .text          0x000000f0      0x264 /tmp/ccIbWKpi.o
+ .text          0x000000f0      0x274 /tmp/cc8rrok2.o
                 0x000000f0                lock_init
                 0x000000fe                lock_acquire
                 0x0000014c                lock_release
-                0x0000015e                svc_handler
-                0x00000160                systick_init
-                0x00000174                yield
-                0x000001a4                threadStarter
-                0x000001d4                scheduler
-                0x00000248                periphs_init
-                0x000002b0                systick_handler
-                0x000002c8                main
- .text          0x00000354       0x48 /tmp/ccILwBdp.o
-                0x0000035a                ResetISR
- .text          0x0000039c       0xd8 /tmp/ccxU2sOp.o
-                0x0000039c                _lseek
-                0x000003a0                _open
-                0x000003a8                _close
-                0x000003ac                _exit
-                0x000003ae                _kill
-                0x000003b2                _getpid
-                0x000003b6                _fstat
-                0x000003ba                _stat
-                0x000003c0                _link
-                0x000003c6                _unlink
-                0x000003cc                _raise
-                0x000003ce                _gettimeofday
-                0x000003d2                _times
-                0x000003d6                _isatty
-                0x000003da                _rename
-                0x000003ea                _system
-                0x000003fe                _sbrk
-                0x00000430                _write
-                0x00000450                _read
- .text          0x00000474      0x368 /tmp/ccUGYb3w.o
-                0x000004b4                RIT128x96x4DisplayOff
-                0x000004c0                RIT128x96x4DisplayOn
-                0x00000520                RIT128x96x4ImageDraw
-                0x00000588                RIT128x96x4StringDraw
-                0x00000660                RIT128x96x4Clear
-                0x000006b4                RIT128x96x4Disable
-                0x000006fc                RIT128x96x4Enable
-                0x00000758                RIT128x96x4Init
- .text          0x000007dc       0x10 /tmp/ccZx16PE.o
-                0x000007dc                createThread
- .text          0x000007ec       0x78 /tmp/ccWKRUnP.o
-                0x000007ec                thread3_OLED
-                0x00000800                thread2_LED
-                0x00000814                thread4_UART
-                0x00000834                thread1_UART
+                0x0000015e                systick_handler
+                0x00000170                systick_init
+                0x00000184                yield
+                0x000001b4                threadStarter
+                0x000001e4                scheduler
+                0x00000258                periphs_init
+                0x000002c0                svc_handler
+                0x000002cc                temp_scheduler
+                0x000002d8                main
+ .text          0x00000364       0x48 /tmp/ccNbms34.o
+                0x0000036a                ResetISR
+ .text          0x000003ac       0xd8 /tmp/ccQ9p0T8.o
+                0x000003ac                _lseek
+                0x000003b0                _open
+                0x000003b8                _close
+                0x000003bc                _exit
+                0x000003be                _kill
+                0x000003c2                _getpid
+                0x000003c6                _fstat
+                0x000003ca                _stat
+                0x000003d0                _link
+                0x000003d6                _unlink
+                0x000003dc                _raise
+                0x000003de                _gettimeofday
+                0x000003e2                _times
+                0x000003e6                _isatty
+                0x000003ea                _rename
+                0x000003fa                _system
+                0x0000040e                _sbrk
+                0x00000440                _write
+                0x00000460                _read
+ .text          0x00000484      0x368 /tmp/ccy6gKMc.o
+                0x000004c4                RIT128x96x4DisplayOff
+                0x000004d0                RIT128x96x4DisplayOn
+                0x00000530                RIT128x96x4ImageDraw
+                0x00000598                RIT128x96x4StringDraw
+                0x00000670                RIT128x96x4Clear
+                0x000006c4                RIT128x96x4Disable
+                0x0000070c                RIT128x96x4Enable
+                0x00000768                RIT128x96x4Init
+ .text          0x000007ec       0x10 /tmp/ccaOt0gh.o
+                0x000007ec                createThread
+ .text          0x000007fc       0xec /tmp/ccmWucfo.o
+                0x000007fc                thread3_OLED
+                0x00000820                thread2_LED
+                0x00000844                thread4_UART
+                0x00000888                thread1_UART
  .text.GPIODirModeSet
-                0x00000864       0x2e /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
-                0x00000864                GPIODirModeSet
+                0x000008e8       0x2e /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
+                0x000008e8                GPIODirModeSet
  .text.GPIOPadConfigSet
-                0x00000892       0xc8 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
-                0x00000892                GPIOPadConfigSet
+                0x00000916       0xc8 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
+                0x00000916                GPIOPadConfigSet
  .text.GPIOPinWrite
-                0x0000095a        0x6 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
-                0x0000095a                GPIOPinWrite
+                0x000009de        0x6 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
+                0x000009de                GPIOPinWrite
  .text.GPIOPinTypeGPIOOutput
-                0x00000960       0x1c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
-                0x00000960                GPIOPinTypeGPIOOutput
+                0x000009e4       0x1c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
+                0x000009e4                GPIOPinTypeGPIOOutput
  .text.GPIOPinTypeSSI
-                0x0000097c       0x1c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
-                0x0000097c                GPIOPinTypeSSI
+                0x00000a00       0x1c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
+                0x00000a00                GPIOPinTypeSSI
  .text.GPIOPinTypeUART
-                0x00000998       0x1c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
-                0x00000998                GPIOPinTypeUART
+                0x00000a1c       0x1c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
+                0x00000a1c                GPIOPinTypeUART
  .text.IntMasterEnable
-                0x000009b4        0xa /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(interrupt.o)
-                0x000009b4                IntMasterEnable
+                0x00000a38        0xa /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(interrupt.o)
+                0x00000a38                IntMasterEnable
  .text.SSIConfigSetExpClk
-                0x000009be       0x4a /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
-                0x000009be                SSIConfigSetExpClk
+                0x00000a42       0x4a /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
+                0x00000a42                SSIConfigSetExpClk
  .text.SSIEnable
-                0x00000a08        0xa /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
-                0x00000a08                SSIEnable
+                0x00000a8c        0xa /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
+                0x00000a8c                SSIEnable
  .text.SSIDisable
-                0x00000a12        0xa /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
-                0x00000a12                SSIDisable
+                0x00000a96        0xa /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
+                0x00000a96                SSIDisable
  .text.SSIDataPut
-                0x00000a1c        0xc /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
-                0x00000a1c                SSIDataPut
+                0x00000aa0        0xc /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
+                0x00000aa0                SSIDataPut
  .text.SSIDataGet
-                0x00000a28        0xe /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
-                0x00000a28                SSIDataGet
+                0x00000aac        0xe /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
+                0x00000aac                SSIDataGet
  .text.SSIDataGetNonBlocking
-                0x00000a36       0x14 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
-                0x00000a36                SSIDataGetNonBlocking
- *fill*         0x00000a4a        0x2 00
+                0x00000aba       0x14 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(ssi.o)
+                0x00000aba                SSIDataGetNonBlocking
+ *fill*         0x00000ace        0x2 00
  .text.SysCtlPeripheralEnable
-                0x00000a4c       0x5c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
-                0x00000a4c                SysCtlPeripheralEnable
+                0x00000ad0       0x5c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
+                0x00000ad0                SysCtlPeripheralEnable
  .text.SysCtlDelay
-                0x00000aa8        0x6 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
-                0x00000aa8                SysCtlDelay
- *fill*         0x00000aae        0x2 00
+                0x00000b2c        0x6 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
+                0x00000b2c                SysCtlDelay
+ *fill*         0x00000b32        0x2 00
  .text.SysCtlClockSet
-                0x00000ab0      0x174 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
-                0x00000ab0                SysCtlClockSet
+                0x00000b34      0x174 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
+                0x00000b34                SysCtlClockSet
  .text.SysCtlClockGet
-                0x00000c24      0x1dc /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
-                0x00000c24                SysCtlClockGet
+                0x00000ca8      0x1dc /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
+                0x00000ca8                SysCtlClockGet
  .text.UARTEnable
-                0x00000e00       0x16 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
-                0x00000e00                UARTEnable
+                0x00000e84       0x16 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
+                0x00000e84                UARTEnable
  .text.UARTDisable
-                0x00000e16       0x1e /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
-                0x00000e16                UARTDisable
+                0x00000e9a       0x1e /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
+                0x00000e9a                UARTDisable
  .text.UARTConfigSetExpClk
-                0x00000e34       0x4e /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
-                0x00000e34                UARTConfigSetExpClk
+                0x00000eb8       0x4e /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
+                0x00000eb8                UARTConfigSetExpClk
  .text.UARTCharGetNonBlocking
-                0x00000e82       0x10 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
-                0x00000e82                UARTCharGetNonBlocking
+                0x00000f06       0x10 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
+                0x00000f06                UARTCharGetNonBlocking
  .text.UARTCharPut
-                0x00000e92        0xc /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
-                0x00000e92                UARTCharPut
+                0x00000f16        0xc /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(uart.o)
+                0x00000f16                UARTCharPut
  .text.CPUcpsie
-                0x00000e9e        0x8 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(cpu.o)
-                0x00000e9e                CPUcpsie
- *fill*         0x00000ea6        0x2 00
- .text          0x00000ea8        0xc /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-errno.o)
-                0x00000ea8                __errno
- .text          0x00000eb4       0x20 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-exit.o)
-                0x00000eb4                exit
- .text          0x00000ed4       0x64 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-iprintf.o)
-                0x00000ed4                _iprintf_r
-                0x00000f00                iprintf
- .text          0x00000f38       0x20 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-malloc.o)
-                0x00000f38                free
-                0x00000f48                malloc
- .text          0x00000f58      0x5a4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o)
-                0x00000f58                _malloc_r
- .text          0x000014fc        0x8 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mlock.o)
-                0x000014fc                __malloc_lock
-                0x00001500                __malloc_unlock
- .text          0x00001504       0x28 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-sbrkr.o)
-                0x00001504                _sbrk_r
- .text          0x0000152c       0x1c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-setjmp.o)
-                0x0000152c                setjmp
-                0x00001538                longjmp
- .text          0x00001548      0xd38 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-vfiprintf.o)
-                0x00001564                _vfiprintf_r
-                0x00002264                vfiprintf
- .text          0x00002280      0x104 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-wsetup.o)
-                0x00002280                __swsetup_r
- .text          0x00002384      0x130 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-__call_atexit.o)
-                0x00002384                __call_exitprocs
- .text          0x000024b4        0xc /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-atexit.o)
-                0x000024b4                atexit
- .text          0x000024c0      0x178 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fflush.o)
-                0x000024c0                _fflush_r
-                0x00002610                fflush
- .text          0x00002638      0x1c8 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-findfp.o)
-                0x00002638                __sfp_lock_acquire
-                0x0000263c                __sfp_lock_release
-                0x00002640                __sinit_lock_acquire
-                0x00002644                __sinit_lock_release
-                0x00002650                __fp_unlock_all
-                0x00002668                __fp_lock_all
-                0x00002680                _cleanup_r
-                0x0000268c                _cleanup
-                0x000026e8                __sfmoreglue
-                0x00002718                __sfp
-                0x000027a0                __sinit
- .text          0x00002800       0x30 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fini.o)
-                0x00002800                __libc_fini_array
- .text          0x00002830      0x268 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o)
-                0x00002830                _malloc_trim_r
-                0x000028d8                _free_r
- .text          0x00002a98      0x334 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fvwrite.o)
-                0x00002a98                __sfvwrite_r
- .text          0x00002dcc       0xa0 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fwalk.o)
-                0x00002dcc                _fwalk_reent
-                0x00002e20                _fwalk
- .text          0x00002e6c       0xdc /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-makebuf.o)
-                0x00002e6c                __smakebuf_r
- .text          0x00002f48       0x74 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memchr.o)
-                0x00002f48                memchr
- .text          0x00002fbc      0x190 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memcpy.o)
-                0x00002fbc                memcpy
- .text          0x0000314c       0xb8 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memmove.o)
-                0x0000314c                memmove
- .text          0x00003204       0xd4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
-                0x00003204                memset
- .text          0x000032d8      0x3b4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reallocr.o)
-                0x000032d8                _realloc_r
- .text          0x0000368c       0x90 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-stdio.o)
-                0x0000368c                __sclose
-                0x00003694                __sseek
-                0x000036bc                __swrite
-                0x000036f8                __sread
- .text          0x0000371c       0x60 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
-                0x0000371c                strlen
- .text          0x0000377c       0x2c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-writer.o)
-                0x0000377c                _write_r
- .text          0x000037a8       0xe8 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-__atexit.o)
-                0x000037a8                __register_exitproc
- .text          0x00003890       0x28 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-closer.o)
-                0x00003890                _close_r
- .text          0x000038b8       0xcc /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fclose.o)
-                0x000038b8                _fclose_r
-                0x00003974                fclose
- .text          0x00003984       0x2c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fstatr.o)
-                0x00003984                _fstat_r
- .text          0x000039b0       0x28 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-isattyr.o)
-                0x000039b0                _isatty_r
- .text          0x000039d8       0x2c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-lseekr.o)
-                0x000039d8                _lseek_r
- .text          0x00003a04       0x2c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-readr.o)
-                0x00003a04                _read_r
- .text          0x00003a30       0x2c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_aeabi_uldivmod.o)
-                0x00003a30                __aeabi_uldivmod
- .text          0x00003a5c       0x58 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(bpabi.o)
-                0x00003a5c                __gnu_uldivmod_helper
-                0x00003a88                __gnu_ldivmod_helper
- .text          0x00003ab4        0x4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_dvmd_tls.o)
-                0x00003ab4                __aeabi_ldiv0
-                0x00003ab4                __aeabi_idiv0
- .text          0x00003ab8      0x364 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
-                0x00003ab8                __divdi3
- .text          0x00003e1c      0x300 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
-                0x00003e1c                __udivdi3
- *fill*         0x0000411c        0x4 00
- .text          0x00004120      0x278 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_udivsi3.o)
-                0x00004120                __udivsi3
-                0x00004120                __aeabi_uidiv
-                0x0000437c                __aeabi_uidivmod
+                0x00000f22        0x8 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(cpu.o)
+                0x00000f22                CPUcpsie
+ *fill*         0x00000f2a        0x2 00
+ .text          0x00000f2c        0xc /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-errno.o)
+                0x00000f2c                __errno
+ .text          0x00000f38       0x20 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-exit.o)
+                0x00000f38                exit
+ .text          0x00000f58       0x64 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-iprintf.o)
+                0x00000f58                _iprintf_r
+                0x00000f84                iprintf
+ .text          0x00000fbc       0x20 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-malloc.o)
+                0x00000fbc                free
+                0x00000fcc                malloc
+ .text          0x00000fdc      0x5a4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o)
+                0x00000fdc                _malloc_r
+ .text          0x00001580        0x8 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mlock.o)
+                0x00001580                __malloc_lock
+                0x00001584                __malloc_unlock
+ .text          0x00001588       0x28 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-sbrkr.o)
+                0x00001588                _sbrk_r
+ .text          0x000015b0       0x1c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-setjmp.o)
+                0x000015b0                setjmp
+                0x000015bc                longjmp
+ .text          0x000015cc      0xd38 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-vfiprintf.o)
+                0x000015e8                _vfiprintf_r
+                0x000022e8                vfiprintf
+ .text          0x00002304      0x104 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-wsetup.o)
+                0x00002304                __swsetup_r
+ .text          0x00002408      0x130 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-__call_atexit.o)
+                0x00002408                __call_exitprocs
+ .text          0x00002538        0xc /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-atexit.o)
+                0x00002538                atexit
+ .text          0x00002544      0x178 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fflush.o)
+                0x00002544                _fflush_r
+                0x00002694                fflush
+ .text          0x000026bc      0x1c8 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-findfp.o)
+                0x000026bc                __sfp_lock_acquire
+                0x000026c0                __sfp_lock_release
+                0x000026c4                __sinit_lock_acquire
+                0x000026c8                __sinit_lock_release
+                0x000026d4                __fp_unlock_all
+                0x000026ec                __fp_lock_all
+                0x00002704                _cleanup_r
+                0x00002710                _cleanup
+                0x0000276c                __sfmoreglue
+                0x0000279c                __sfp
+                0x00002824                __sinit
+ .text          0x00002884       0x30 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fini.o)
+                0x00002884                __libc_fini_array
+ .text          0x000028b4      0x268 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-freer.o)
+                0x000028b4                _malloc_trim_r
+                0x0000295c                _free_r
+ .text          0x00002b1c      0x334 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fvwrite.o)
+                0x00002b1c                __sfvwrite_r
+ .text          0x00002e50       0xa0 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fwalk.o)
+                0x00002e50                _fwalk_reent
+                0x00002ea4                _fwalk
+ .text          0x00002ef0       0xdc /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-makebuf.o)
+                0x00002ef0                __smakebuf_r
+ .text          0x00002fcc       0x74 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memchr.o)
+                0x00002fcc                memchr
+ .text          0x00003040      0x190 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memcpy.o)
+                0x00003040                memcpy
+ .text          0x000031d0       0xb8 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memmove.o)
+                0x000031d0                memmove
+ .text          0x00003288       0xd4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+                0x00003288                memset
+ .text          0x0000335c      0x3b4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reallocr.o)
+                0x0000335c                _realloc_r
+ .text          0x00003710       0x90 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-stdio.o)
+                0x00003710                __sclose
+                0x00003718                __sseek
+                0x00003740                __swrite
+                0x0000377c                __sread
+ .text          0x000037a0       0x60 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-strlen.o)
+                0x000037a0                strlen
+ .text          0x00003800       0x2c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-writer.o)
+                0x00003800                _write_r
+ .text          0x0000382c       0xe8 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-__atexit.o)
+                0x0000382c                __register_exitproc
+ .text          0x00003914       0x28 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-closer.o)
+                0x00003914                _close_r
+ .text          0x0000393c       0xcc /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fclose.o)
+                0x0000393c                _fclose_r
+                0x000039f8                fclose
+ .text          0x00003a08       0x2c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-fstatr.o)
+                0x00003a08                _fstat_r
+ .text          0x00003a34       0x28 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-isattyr.o)
+                0x00003a34                _isatty_r
+ .text          0x00003a5c       0x2c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-lseekr.o)
+                0x00003a5c                _lseek_r
+ .text          0x00003a88       0x2c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-readr.o)
+                0x00003a88                _read_r
+ .text          0x00003ab4       0x2c /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_aeabi_uldivmod.o)
+                0x00003ab4                __aeabi_uldivmod
+ .text          0x00003ae0       0x58 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(bpabi.o)
+                0x00003ae0                __gnu_uldivmod_helper
+                0x00003b0c                __gnu_ldivmod_helper
+ .text          0x00003b38        0x4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_dvmd_tls.o)
+                0x00003b38                __aeabi_ldiv0
+                0x00003b38                __aeabi_idiv0
+ .text          0x00003b3c      0x364 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
+                0x00003b3c                __divdi3
+ .text          0x00003ea0      0x300 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
+                0x00003ea0                __udivdi3
+ .text          0x000041a0      0x278 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_udivsi3.o)
+                0x000041a0                __udivsi3
+                0x000041a0                __aeabi_uidiv
+                0x000043fc                __aeabi_uidivmod
  *(.rodata*)
- .rodata        0x00004398       0x10 /tmp/ccIbWKpi.o
+ .rodata        0x00004418       0x10 /tmp/cc8rrok2.o
  .rodata.str1.1
-                0x000043a8       0x3d /tmp/ccIbWKpi.o
- *fill*         0x000043e5        0x3 00
- .rodata        0x000043e8      0x244 /tmp/ccUGYb3w.o
+                0x00004428       0x4c /tmp/cc8rrok2.o
+ .rodata        0x00004474      0x244 /tmp/ccy6gKMc.o
+ .rodata.str1.1
+                0x000046b8       0x43 /tmp/ccmWucfo.o
+ *fill*         0x000046fb        0x1 00
  .rodata.g_pulXtals
-                0x0000462c       0x6c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
+                0x000046fc       0x6c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
  .rodata.g_pulRCGCRegs
-                0x00004698        0xc /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
- .rodata        0x000046a4        0x4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
-                0x000046a4                _global_impure_ptr
+                0x00004768        0xc /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(sysctl.o)
+ .rodata        0x00004774        0x4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
+                0x00004774                _global_impure_ptr
  .rodata.str1.4
-                0x000046a8        0x2 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
+                0x00004778        0x2 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-impure.o)
                                   0x4 (size before relaxing)
- *fill*         0x000046aa        0x2 00
- .rodata        0x000046ac       0x20 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-vfiprintf.o)
+ *fill*         0x0000477a        0x2 00
+ .rodata        0x0000477c       0x20 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-vfiprintf.o)
  .rodata.str1.4
-                0x000046cc       0x30 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-vfiprintf.o)
- .rodata        0x000046fc       0x60 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-findfp.o)
-                0x000046fc                __sf_fake_stdin
-                0x0000471c                __sf_fake_stdout
-                0x0000473c                __sf_fake_stderr
+                0x0000479c       0x30 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-vfiprintf.o)
+ .rodata        0x000047cc       0x60 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-findfp.o)
+                0x000047cc                __sf_fake_stdin
+                0x000047ec                __sf_fake_stdout
+                0x0000480c                __sf_fake_stderr
 
-.glue_7         0x0000475c        0x0
+.glue_7         0x0000482c        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x0000475c        0x0
+.glue_7t        0x0000482c        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x0000475c        0x0
+.vfp11_veneer   0x0000482c        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x0000475c        0x0
+.v4_bx          0x0000482c        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.fini           0x0000475c        0x4
- .fini          0x0000475c        0x4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x0000475c                _fini
+.fini           0x0000482c        0x4
+ .fini          0x0000482c        0x4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x0000482c                _fini
 
-.ARM.exidx      0x00004760        0x8
+.ARM.exidx      0x00004830        0x8
  *(.ARM.exidx)
- .ARM.exidx     0x00004760        0x8 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
- .ARM.exidx     0x00004768        0x0 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x00004830        0x8 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_divdi3.o)
+ .ARM.exidx     0x00004838        0x0 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
-                0x00004768                _etext = .
+                0x00004838                _etext = .
 
-.data           0x20000000      0x504 load address 0x00004768
+.data           0x20000000      0x504 load address 0x00004838
                 0x20000000                _data = .
  *(vtable)
  *(.data*)
@@ -912,24 +914,24 @@ LOAD /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eab
                 0x20000500                __malloc_trim_threshold
                 0x20000504                _edata = .
 
-.bss            0x20000504      0x4e8 load address 0x00004c6c
+.bss            0x20000504      0x4e8 load address 0x00004d3c
                 0x20000504                _bss = .
  *(.bss*)
- .bss           0x20000504      0x46c /tmp/ccIbWKpi.o
- .bss           0x20000970        0xc /tmp/ccUGYb3w.o
+ .bss           0x20000504      0x46c /tmp/cc8rrok2.o
+ .bss           0x20000970        0xc /tmp/ccy6gKMc.o
  .bss           0x2000097c       0x34 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-mallocr.o)
                 0x2000097c                __malloc_top_pad
                 0x20000980                __malloc_current_mallinfo
                 0x200009a8                __malloc_max_sbrked_mem
                 0x200009ac                __malloc_max_total_mem
  *(COMMON)
- COMMON         0x200009b0       0x34 /tmp/ccIbWKpi.o
+ COMMON         0x200009b0       0x34 /tmp/cc8rrok2.o
                 0x200009b0                UART0_lock
                 0x200009bc                LED_lock
                 0x200009c8                OLED_lock
                 0x200009d4                currThread
                 0x200009d8                UART1_lock
- COMMON         0x200009e4        0x4 /tmp/ccxU2sOp.o
+ COMMON         0x200009e4        0x4 /tmp/ccQ9p0T8.o
                 0x200009e4                heap_end
  COMMON         0x200009e8        0x4 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-reent.o)
                 0x200009e8                errno
@@ -944,17 +946,17 @@ OUTPUT(./gcc/Project3.elf elf32-littlearm)
  .ARM.attributes
                 0x00000019       0x29 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  .ARM.attributes
-                0x00000042       0x31 /tmp/ccIbWKpi.o
+                0x00000042       0x31 /tmp/cc8rrok2.o
  .ARM.attributes
-                0x00000073       0x31 /tmp/ccILwBdp.o
+                0x00000073       0x31 /tmp/ccNbms34.o
  .ARM.attributes
-                0x000000a4       0x31 /tmp/ccxU2sOp.o
+                0x000000a4       0x31 /tmp/ccQ9p0T8.o
  .ARM.attributes
-                0x000000d5       0x31 /tmp/ccUGYb3w.o
+                0x000000d5       0x31 /tmp/ccy6gKMc.o
  .ARM.attributes
-                0x00000106       0x1b /tmp/ccZx16PE.o
+                0x00000106       0x1b /tmp/ccaOt0gh.o
  .ARM.attributes
-                0x00000121       0x31 /tmp/ccWKRUnP.o
+                0x00000121       0x31 /tmp/ccmWucfo.o
  .ARM.attributes
                 0x00000152       0x31 /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
  .ARM.attributes
@@ -1057,11 +1059,11 @@ OUTPUT(./gcc/Project3.elf elf32-littlearm)
                 0x00000921       0x19 /home/jesse/CodeSourcery/Sourcery_G++_Lite_2010/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
 
 .comment        0x00000000      0x102
- .comment       0x00000000       0x2b /tmp/ccIbWKpi.o
- .comment       0x0000002b       0x2b /tmp/ccILwBdp.o
- .comment       0x00000056       0x2b /tmp/ccxU2sOp.o
- .comment       0x00000081       0x2b /tmp/ccUGYb3w.o
- .comment       0x000000ac       0x2b /tmp/ccWKRUnP.o
+ .comment       0x00000000       0x2b /tmp/cc8rrok2.o
+ .comment       0x0000002b       0x2b /tmp/ccNbms34.o
+ .comment       0x00000056       0x2b /tmp/ccQ9p0T8.o
+ .comment       0x00000081       0x2b /tmp/ccy6gKMc.o
+ .comment       0x000000ac       0x2b /tmp/ccmWucfo.o
  .comment       0x000000d7       0x2b /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(gpio.o)
                                  0x2c (size before relaxing)
  .comment       0x00000000       0x2c /home/jesse/StellarisWare/driverlib/gcc-cm3/libdriver-cm3.a(interrupt.o)
