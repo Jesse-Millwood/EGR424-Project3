@@ -17,6 +17,7 @@ void thread1_UART(void){
             iprintf("MBER 1\r\n");
             lock_release(&UART0_lock);
             lock_release(&UART0_lock);
+            
         }
         yield();
 	}

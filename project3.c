@@ -141,23 +141,11 @@ void threadStarter(void)
   yield();
 }
 
-void temp_scheduler(void)
+void scheduler_handler(void)
 {
     iprintf("in temp schedule");
 }
 
-void systick_handler(void)
-{
-    NVIC_ST_CURRENT_R = 0x1F40;
-    //iprintf("\n\nSYSTICK\n\n");
-    asm volatile ("svc #100");
-
-}
-
-void svc_handler(void)
-{
-    iprintf("\n\nSVC\n\n");
-}
 
 void systick_init(void)
 {
