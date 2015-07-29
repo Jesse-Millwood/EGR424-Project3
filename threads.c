@@ -11,9 +11,9 @@ void thread1_UART(void){
             lock_acquire(&UART0_lock);
             // Simulate code that is occasionally interrupted
             iprintf("THIS IS T");
-            yield(); // context switch "interrupt"
+            //yield(); // context switch "interrupt"
             iprintf("HREAD NU");
-            yield(); // context switch "interrupt"
+            //yield(); // context switch "interrupt"
             iprintf("MBER 1\r\n");
             lock_release(&UART0_lock);
             lock_release(&UART0_lock);
@@ -32,7 +32,7 @@ void thread2_LED(void){
         {
             //toggle LED every second
         }
-        yield();
+        //yield();
     }
     //(systick timer times out ever 1ms, so proves pre-emption works)
 }
@@ -47,7 +47,7 @@ void thread3_OLED(void)
         {
             //display on OLED
         }
-        yield();
+        //yield();
     }
 }
 
@@ -60,10 +60,10 @@ void thread4_UART(void)
         if(lock_acquire(&UART0_lock))
         {
             iprintf("this is t");
-            yield(); // context switch "interrupt"
+            //yield(); // context switch "interrupt"
             iprintf("hread number 2\r\n");
             lock_release(&UART0_lock);
         }
-        yield();
+        //yield();
     }
 }

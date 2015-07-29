@@ -13,8 +13,8 @@ void ResetISR(void);
 static void NmiSR(void);
 static void FaultISR(void);
 static void IntDefaultHandler(void);
-static void systick_handler(void);
-static void svc_handler(void);
+// static void systick_handler(void);
+// static void svc_handler(void);
 static void scheduler_handler(void);
 
 //*****************************************************************************

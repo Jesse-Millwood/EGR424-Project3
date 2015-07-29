@@ -58,6 +58,9 @@ void scheduler(void);
 void systick_init(void);
 void periphs_init(void);
 void createThread(jmp_buf buf, char *stack);
+void restore_registers(unsigned* buffer);
+int save_registers(unsigned* buffer);
+    
 
 
 
