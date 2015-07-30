@@ -19,36 +19,21 @@ void main(void)
 
   
   periphs_init();
-  // Create all the threads and allocate a stack for each one
-  for (i=0; i < NUM_THREADS; i++) {
-    // Mark thread as runnable
-    threads[i].active = 1;
 
-    // Allocate stack
-    threads[i].stack = (char *)malloc(STACK_SIZE) + STACK_SIZE;
-    if (threads[i].stack == 0) {
-      iprintf("Out of memory\r\n");
-      exit(1);
-    }
 
-    // After createThread() executes, we can execute a longjmp()
-    // to threads[i].state and the thread will begin execution
-    // at threadStarter() with its own stack.
-    createThread(threads[i].state, threads[i].stack);
-  }
 
+  iprintf("Num of threads: %d\n", NUM_THREADS);
+
+  // Start running coroutines
+  currThread = -1;
+  initialize_threads();
   // Initialize the global thread lock
   // lock_init(&threadlock);
   lock_init(&OLED_lock);
   lock_init(&UART0_lock);
   lock_init(&UART1_lock);
-  lock_init(&LED_lock);
-
-  iprintf("Num of threads: %d\n", NUM_THREADS);
-
-  // Start running coroutines
-  //scheduler();
-  currThread = -1;
+//  lock_init(&LED_lock);
+  // cause exception to move program to scheduler
   yield();
 
   // If scheduler() returns, all coroutines are inactive and we return
@@ -113,7 +98,7 @@ void lock_release(lock_t* lock)
 // like a standard function return back to the caller of yield().
 void yield(void)
 {
-    iprintf("In yield\n");
+    //iprintf("In yield\n");
     // call scheduler
     asm volatile ("svc #100");
 }
@@ -141,56 +126,41 @@ void threadStarter(void)
 
 void scheduler_handler(void)
 {
-    iprintf("in temp schedule");
-    unsigned i;
+    // toggle pin for measuring context switch time
+    //PIN_CONTEXT ^= 1; 
+    //Save current thread state
+    if(currThread != -1)
+    {
+        save_registers(threads[currThread].savedregs);
+    }
 
-
-  
-    do {
-        // It's kinda inefficient to call setjmp() every time through this
-        // loop, huh? I'm sure your code will be better.
-        if (save_registers(scheduler_buf)==0) {
-
-            // We saved the state of the scheduler, now find the next
-            // runnable thread in round-robin fashion. The 'i' variable
-            // keeps track of how many runnable threads there are. If we
-            // make a pass through threads[] and all threads are inactive,
-            // then 'i' will become 0 and we can exit the entire program.
-            i = NUM_THREADS;
-            do {
-                // Round-robin scheduler
-                if (++currThread == NUM_THREADS) {
-                    currThread = 0;
-                }
-                
-                if (threads[currThread].active) {
-                    restore_registers(threads[currThread].savedregs);
-                } else {
-                    i--;
-                }
-            } while (i > 0);
-
-            // No active threads left. Leave the scheduler, hence the program.
-            return;
-
-        } else {
-            // yield() returns here. Did the thread that just yielded to us exit? If
-            // so, clean up its entry in the thread table.
-            if (! threads[currThread].active) {
-                free(threads[currThread].stack - STACK_SIZE);
-            }
+    do
+    {
+        if (++currThread >= NUM_THREADS)
+        {
+            currThread = 0;
         }
-    } while (1);
+    } while (threads[currThread].active != 1);
+    // toggle pin for measuring context switch time
+    //PIN_CONTEXT ^= 1;     
+    //Restore the thread state for the thread about to be executed
+    restore_registers(threads[currThread].savedregs);
+    
 }
 
 
 void systick_init(void)
 {
+
+    // Fire every 1 second, with 8MHz clock
+    NVIC_ST_CTRL_R = 0;
+    NVIC_ST_RELOAD_R = 0x1F40;
+    NVIC_ST_CURRENT_R = 0;
     NVIC_ST_CTRL_R = NVIC_ST_CTRL_CLK_SRC |
         NVIC_ST_CTRL_INTEN |
         NVIC_ST_CTRL_ENABLE;
-    // Fire every 1 second, with 8MHz clock
-    NVIC_ST_RELOAD_R = 0x1F40;
+    
+    
 }
 
 void periphs_init(void)
@@ -214,6 +184,15 @@ void periphs_init(void)
     UARTConfigSetExpClk(UART0_BASE, SysCtlClockGet(), 115200,
                         (UART_CONFIG_WLEN_8 | UART_CONFIG_STOP_ONE |
                          UART_CONFIG_PAR_NONE));
+    
+    // Initialize Pins for LED
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+    SYSCTL_RCGC2_R |= SYSCTL_RCGC2_GPIOF;
+    GPIO_PORTF_DIR_R = 0x01;
+    GPIO_PORTF_DEN_R = 0x01;
+    // Initialize Pins for Context switch measuring
+    
+    
     systick_init();
     IntMasterEnable();
     
@@ -223,8 +202,8 @@ int save_registers(unsigned* buffer)
 {
     // Takes Place of setjmp
     // Saves the current environment
-    asm volatile ("mrs r12,psp\n"
-                  "stmea r0!, {r4-r12}");
+    asm volatile ("mrs r1,psp\n"
+                  "stm r0, {r1, r4-r12}");
     // return 0 when setting up the buffer
     return 0;
     
@@ -247,6 +226,28 @@ void restore_registers(unsigned* buffer)
                   "bx lr");
 }
 
+
+void initialize_threads(void)
+{
+    
+    unsigned i;
+
+    // Create all the threads and allocate a stack for each one
+    for (i = 0; i < NUM_THREADS; i++) 
+    {
+        //Mark thread as runnable
+        threads[i].active = 1;
+        //Allocate stack
+        threads[i].stack = (char *)malloc(STACK_SIZE) + STACK_SIZE;
+        if (threads[i].stack == 0)
+        {
+            //out of memory
+            exit(1);
+        }
+        //Create each thread
+        createThread(threads[i].savedregs, &(threads[i].stack));
+  }
+}
 
 
 

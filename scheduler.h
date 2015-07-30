@@ -33,7 +33,7 @@ typedef struct LOCK_T
 typedef struct {
     int active;       // non-zero means thread is allowed to run
     char *stack;      // pointer to TOP of stack (highest memory location)
-    jmp_buf state;    // saved state for longjmp()
+    //jmp_buf state;    // saved state for longjmp()
     unsigned savedregs[40]; 
 } threadStruct_t;
 
@@ -60,6 +60,7 @@ void periphs_init(void);
 void createThread(jmp_buf buf, char *stack);
 void restore_registers(unsigned* buffer);
 int save_registers(unsigned* buffer);
+void initialize_threads(void);
     
 
 

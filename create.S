@@ -24,60 +24,33 @@
     .global createThread
 createThread:  
 
-  /* Save registers in the jump buffer. Their values are
-     not important when the thread is first created. This line is the same as
-     the first two lines of setjmp(), except we don't save SP and LR since we 
-     want to set these to our own values. Really, the only point of this 
-     instruction is to advance R0 to the right location in the jump buffer for 
-     pointing to SP (without having to do any math :-) */
-
-     stmea  r0!, { r4-r11 }	// Non-automatically saved registers
-									
-	/*
-	 *	Now we need to store r0-r3, r12, r14, address to return to, and xPSR
-	 *	default values to the thread's stack. These will be used automatically
-	 *	by the thread if they are in the correct order.
-	 */
-	
-	// Store the necessary default values into general-purpose registers
-	mov  r7, #0
-	mov  r8, #0
-	ldr  r9, .L0
-	mov  r10, 0x1000000
-	mov  r11, #0
-	
-	// Decrement the stack pointer then store for each register
-	stmdb r1!, { r7-r11 }
-	
-	// Store the necessary default values into general-purpose registers
-	mov  r8, #0
-	mov  r9, #0
-	mov  r10, #0
-	mov  r11, #0
-	
-	// Decrement the stack pointer then store for each register
-	stmdb  r1!, { r8-r11 }
-	
-	/*
-	 *	Store the stack pointer in the thread array after storing values to
-	 *	the stack, so that the stack pointer is in the correct memory location
-	 *	when the thread starts.
-	 */
-    
   
-  /* Now we save SP and LR in that order. SP is the R1 parameter, and we have
-   * to get the address of threadStarter() into a higher register (so they are
-   * placed in the jump buffer in the right order). */
+	@Store the actual process stack pointer (char*) in r2 from the char ** in r1
+	ldr     r2, [r1]
 
-    ldr     R2, .L0
-    stmea   R0!, { R1, R2 }   @ Store "SP" and "LR" for the new thread
+	@Initialize xPSR (first on stack) with 0x01000000 (Thumb bit set)
+	movw  	r3, 0x0000
+	movt 	r3, 0x0100
+	stmdb 	r2!, {r3}	@Store xPSR at the highest memory location on the stack
 
+	@Store threadStarter as addressToReturnTo (second on stack)
+	ldr  	r3, =threadStarter
+	stmdb   r2!, {r3}	@Store addressToReturnTo (threadStarter) on second highest memory on stack
 
+	@Initialize r0-r3, r12, and r14
+	mov  	r3, #0
+	mov  	r12, #0
+	stmdb   r2!, {r3}	 		@Simulate storing r14 (LR) as 0
+	stmdb 	r2!, {r3, r12}		@Store r3, r12 (IP) on stack
+	stmdb   r2!, {r3} 			@Simulate storing r2 on the stack by using the value 0
+	stmdb   r2!, {r3, r12}		@Simulate storing r0 (0) and r1 (0) on stack by storing zeros
 
+	@Save the pointer to the stack pointer
+	str r2, [r1]
 
+	@Store r4-r12 and PSP on array
+	stm 	r0, {r2, r4-r12}
 
-        
-    bx      lr
-    
+	bx		lr
 .L0:
     .word   threadStarter
